@@ -1,0 +1,51 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#add-destination-form {
+  height: 40px;
+  margin: 15px;
+}
+
+#add-destination-form input[type="submit"] {
+  height: 30px;
+}
+
+#airport{
+  height: 40px;
+  padding: 70px;
+}
+
+#flight-list{
+  color: rgb(48, 48, 232);
+  text-align: center;
+  justify-self: center;
+}
+nav{
+  text-align: center;
+}
+
+td > a {
+  color: rgb(48, 48, 232);
+}
+
+td.passed {
+  color: red;
+}
+
+#homepage {
+  text-align: center;
+  font-size: 30px;
+}
+
+body >table {
+  justify-content: center;
+  line-height: 25px;
+}
