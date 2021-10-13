@@ -2,17 +2,14 @@
 
 <h1>Add Tickets:</h1>
 
-<form id="add-ticket-form" action="/tickets" method="POST"></form>
+<form id="add-ticket-form" action="/flights/<%= flight._id %>/tickets" method="POST">
   <label>Seat:</label>
   <input name="seat" required pattern="[A-F][1-9]\d?">
   <label>Price:</label>
   <input type="number" name="price">
+  <input type="submit" value="Add Ticket">
+</form>
 
-
-  <div>Tickets:</div>
-  <ul>
-    <%- flight.ticket.map(t => `<li>${t.seat}</li>`).join('') %>
-  </ul>  
 
 
 <%- include('../partials/footer') %>
