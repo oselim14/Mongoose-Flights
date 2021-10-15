@@ -1,13 +1,13 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-  <div>Airline: </div>
+  <div id="showAirline">Airline: </div>
   <div><%= flight.airline %></div>
-  <div>Airport: </div>
+  <div id="showAirport">Airport: </div>
   <div><%= flight.airport %></div>
-  <div>Flight Number: </div>
+  <div id="showFlightno">Flight Number: </div>
   <div><%= flight.flightNo %></div>
-  <div>Departure: </div>
+  <div id="showDepart">Departure: </div>
   <div><%= flight.departs %></div>
 </section>
 
@@ -26,6 +26,11 @@
         <tr>
           <td><%= t.seat %></td>
           <td><%= t.price %></td>
+          <td>
+            <form action="/tickets/<%= t._id %>?_method=DELETE" method="POST">
+              <button type="submit">X</button>
+            </form>
+          </td>
         </tr>
       <% }); %>
     </tbody>
@@ -35,7 +40,7 @@
 <% } %>
 
 
-<br><br><h2>Destination</h2>
+<br><br><h2>Add Destination:</h2>
 <form id="add-destination-form" method="POST"
     action="/flights/<%= flight.id %>/destinations">
     <label>Destination:</label>
@@ -62,8 +67,8 @@
       <tbody>
         <% flight.destinations.forEach(function(flight) { %>
           <tr>
-            <td><%= flight.airport %></td>
-            <td><%= flight.arrival %></td>
+            <td id="airport"><%= flight.airport %></td>
+            <td id="arrival"><%= flight.arrival %></td>
           </tr>
         <% }); %>
       </tbody>

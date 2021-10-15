@@ -1,21 +1,71 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   align-items: center;
   justify-content: center;
+  background-image: url(https://i.imgur.com/dqhAd1z.png);
+  background-repeat: no-repeat;
+  background-color: rgb(36, 162, 216);
 }
 
+
 a {
-  color: #00B7FF;
+  color: black;
+  background-color: rgb(17	127	174);
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+a:hover{
+  color: white;
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+h5{
+  margin-left: 20px;
+}
+
+h2{
+  margin-left: 20px;
 }
 
 #add-destination-form {
   height: 40px;
-  margin: 15px;
+  margin: 20px;
 }
 
 #add-destination-form input[type="submit"] {
   height: 30px;
+}
+#add-ticket {
+  text-align: center;
+}
+
+#add-ticket-form {
+  height: 40px;
+  margin: 15px;
+  text-align: center;
+
+}
+
+#add-ticket-form input {
+  border: 1px solid blue;
+}
+
+#add-ticket-form input[type="submit"]{
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 7px;
 }
 
 #airport{
@@ -28,24 +78,145 @@ a {
   text-align: center;
   justify-self: center;
 }
+
+#flight-table {
+  background-color: rgb(17	127	174);
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+
 nav{
   text-align: center;
+  background-color: rgb(17	127	174);
+  padding: 40px;
+  color: black;
+  border-radius: 10px;
+  font-size: 30px;
+}
+nav > a{
+  padding: 25px;
+}
+
+nav > a:hover{
+  color:rgb(48, 48, 232)
 }
 
 td > a {
   color: rgb(48, 48, 232);
+  margin-left: 40px;
+ 
+}
+
+td > a:hover {
+  color: black;
+  margin-left: 40px;
 }
 
 td.passed {
-  color: red;
+  color: rgb(148, 5, 5);
 }
+
 
 #homepage {
   text-align: center;
   font-size: 30px;
+  color: black;
 }
 
 body >table {
   justify-content: center;
   line-height: 25px;
+
 }
+ #newflightform{
+   margin-top: 40px;
+   display: inline-block;
+   background-color: rgb(17	127	174);
+   padding: 10px;
+   border-radius: 10px;
+ }
+
+ #add-flight{
+   background-color: rgb(17	127	174);
+ }
+
+ #airline {
+   font-size: 20px;
+   padding: 5px;
+
+ }
+
+ #airport{
+  font-size: 20px;
+  padding: 5px;
+ 
+ }
+
+ #flightno{
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+ }
+
+  #departs{
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  }
+
+  #newflight{
+    padding: 3px;
+    background-color: rgb(17	127	174);
+    font-size: 15px;
+    border: 1px solid rgb(17	127	174);
+    border-radius: 10px;
+    margin: 0px 15px;
+    background-color: rgb(48, 48, 232);
+    color: white;
+    padding: 10px;
+  }
+
+  #newflight:hover{
+    background-color: white;
+    color:rgb(48, 48, 232);
+
+  }
+
+  tr > th {
+    font-size: 30px;
+    padding: 5px;
+    border:1px solid rgb(36, 162, 216)
+  }
+
+  #show-page {
+    font-size: 15px;
+    margin: 5px;
+    border: 1px solid rgb(17	127	174);
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 30px;
+  }
+
+  #showAirline {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #showAirport{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #showFlightno{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  #showDepart{
+    font-size: 20px;
+    font-weight: 500;
+  }
